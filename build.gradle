@@ -3,8 +3,10 @@ apply plugin: 'idea'
 
 repositories {
     mavenCentral()
+    maven { url "https://repository.jboss.org/nexus/content/repositories/releases" }
 }
 
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.10'
+    compile group: 'org.mobicents.diameter', name: 'jdiameter-impl', version: '1.7.0.201'
 }
